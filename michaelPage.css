@@ -10,13 +10,38 @@ html{
 #pageContainer {
 	width:100%;
 }
+.body{
+	width:100%;
+    height:100%;
+    display:inline-flex;
+}
+.mainWidgets{
+	margin-left:150px;
+	padding:0 0 0 100px;
+	display:inline-block;
+	width:300px;
+	text-align: center;
+}
+.description{
+	text-align: center;
+
+}
+#twitterBU{
+	height:50px;
+	width:50px;
+	margin-right: 5px;
+}
+thead{
+	text-align: center;
+}
 
 div#blackBar {
 	background-color: #000000;
     width:100%;
-    margin:0;
+    margin-top:-9px;
     padding:0;
     float:left;
+    height:80px;
 }
 div#header {
     height: 66px;
@@ -27,11 +52,22 @@ div#header {
     padding:0;
     float:left;
 }
+div#footer {
+    height: 66px;
+    font-family: arial;
+    color: #FFFFFF;
+    width:100%;
+    margin:0;
+    padding:0;
+    float:left;
+    display:inline-flex;
+}
 div#whiteBody {
 	width:100%;
-	height: 300px;
-	background-image: url("SF_skyline.jpg");
-	background-size:cover;
+	height: 350px;
+	background-image: url("san-francisco-163.jpg");
+	background-size:60%;
+	background-repeat: no-repeat;
 	position: static;
 	padding:0;
 	margin:0;
@@ -40,7 +76,7 @@ div#whiteBody {
 }
 div#blackBody {
 	width:100%;
-	height:300px;
+	height:350px;
 	background-color: #000000;
 	color: #ffffff;
 	vertical-align:middle;
@@ -77,10 +113,11 @@ div#GSX{
 
 
 h1#text-branding{
-	text-align: center;
+	text-align:center;
 	font-weight: bolder;
 	font-family:Arial, Helvetica, sans-serif;
-	padding:100px;
+	padding:10px 10px 0;
+	margin-right: 300px;
 }
 h1#text-branding-white{
 	text-align: center;
@@ -90,8 +127,9 @@ h1#text-branding-white{
 }
 .nav {
 	position: fixed;
-	left:855px;
+	display:inline;
 	margin-top: 5px;
+	float:right;
 }
 
 .navButton{
@@ -104,12 +142,39 @@ h1#text-branding-white{
 	margin-left: 14px;
 
 }
-
-@media only screen and (max-width: 800px){
+.description{
+	text-align: center;
+}
+@media only screen and (max-width: 900px){
 .nav {
 	position: fixed;
-	left:200px;
 	display:inline;
 	margin-top: 5px;
+	display:inline-flex;
+}
+.mainWidgets{
+	display: block;
+	margin-left:50px;
+	padding:0 0 20px 100px;
+	width:150px;
+}
+div#whiteBody {
+	width:100%;
+	height: 350px;
+	background-image: url("san_francisco_city_skyline.jpg");
+	background-size:cover;
+	position: static;
+	padding:0;
+	margin:0;
+	float:left;
+	text-align: center
+
+}
+h1#text-branding{
+	text-align:center;
+	font-weight: bolder;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:10px 10px 0;
+	margin-right: 0px
 }
 }
